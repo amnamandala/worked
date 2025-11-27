@@ -1,0 +1,52 @@
+import { defineComponent, mergeProps, useSSRContext } from 'vue';
+import { ssrRenderAttrs, ssrRenderList, ssrInterpolate } from 'vue/server-renderer';
+import { _ as _export_sfc } from './server.mjs';
+import '../_/nitro.mjs';
+import 'node:http';
+import 'node:https';
+import 'node:events';
+import 'node:buffer';
+import 'node:fs';
+import 'node:path';
+import 'node:crypto';
+import 'node:url';
+import '../routes/renderer.mjs';
+import 'vue-bundle-renderer/runtime';
+import 'unhead/server';
+import 'devalue';
+import 'unhead/utils';
+import 'vue-router';
+
+const _sfc_main = /* @__PURE__ */ defineComponent({
+  __name: "mindfuls-healing",
+  __ssrInlineRender: true,
+  setup(__props) {
+    const tips = [
+      { title: "Prioritize Quality Sleep 😴", desc: "Restorative sleep helps emotional regulation and stress relief..." },
+      { title: "Embrace Mindful Movement 🏃", desc: "Gentle yoga, walking, or dancing releases endorphins and balances your mind..." },
+      { title: "Practice Mindful Awareness 🌬️", desc: "Use breathing techniques like 4-7-8 to calm your nervous system..." },
+      { title: "Cultivate Healthy Connections 🤝", desc: "Spend time with supportive people who bring calm and comfort to your life..." },
+      { title: "Set Boundaries ✋", desc: "Protect your energy by saying no without guilt when you need rest..." },
+      { title: "Nourish Your Body 🍎", desc: "Eat fresh, colorful foods and hydrate well to support your mood..." },
+      { title: "Creative Hobby 🎨", desc: "Engage in joyful activities that bring peace and inspiration..." },
+      { title: "Emotional Literacy ✍️", desc: "Write or talk about feelings openly — healing starts with awareness." }
+    ];
+    return (_ctx, _push, _parent, _attrs) => {
+      _push(`<section${ssrRenderAttrs(mergeProps({ class: "min-h-screen bg-pink-300 dark:from-gray-900 text-gray-800 dark:text-pink-100 px-6 py-20" }, _attrs))} data-v-ec258891><div class="max-w-5xl mx-auto text-center animate-fade-in" data-v-ec258891><h1 class="text-5xl font-extrabold mb-4 text-pink-600" data-v-ec258891>Mindful Healing</h1><p class="text-lg font-bold opacity-80 mb-10" data-v-ec258891>Discover peace within through mindful awareness and gentle emotional balance.</p><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800" class="rounded-3xl mx-auto mb-12 shadow-lg hover:scale-105 transition" alt="Healing Aesthetic" data-v-ec258891><div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left" data-v-ec258891><!--[-->`);
+      ssrRenderList(tips, (tip, i) => {
+        _push(`<div class="bg-white/60 dark:bg-pink-800/40 rounded-2xl p-6 shadow-md hover:shadow-lg transition" data-v-ec258891><h3 class="text-2xl font-semibold mb-3 text-pink-500" data-v-ec258891>${ssrInterpolate(tip.title)}</h3><p class="text-base leading-relaxed" data-v-ec258891>${ssrInterpolate(tip.desc)}</p></div>`);
+      });
+      _push(`<!--]--></div></div></section>`);
+    };
+  }
+});
+const _sfc_setup = _sfc_main.setup;
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/mindfuls-healing.vue");
+  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
+};
+const mindfulsHealing = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-ec258891"]]);
+
+export { mindfulsHealing as default };
+//# sourceMappingURL=mindfuls-healing-1Acva4vT.mjs.map

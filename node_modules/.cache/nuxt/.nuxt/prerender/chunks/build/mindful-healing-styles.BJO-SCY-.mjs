@@ -1,0 +1,8 @@
+const mindfulHealing_vue_vue_type_style_index_0_scoped_b5ec0342_lang = ".animate-fadeIn[data-v-b5ec0342]{animation:fadeIn-b5ec0342 1s ease-in-out}@keyframes fadeIn-b5ec0342{0%{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}";
+
+const mindfulHealingStyles_BJOSCY_ = [
+  mindfulHealing_vue_vue_type_style_index_0_scoped_b5ec0342_lang
+];
+
+export { mindfulHealingStyles_BJOSCY_ as default };
+//# sourceMappingURL=mindful-healing-styles.BJO-SCY-.mjs.map

@@ -1,0 +1,2 @@
+import{e as o,c as e}from"../../../_/nitro.mjs";import{r as t}from"../../../_/features.mjs";import"node:buffer";import"node:timers";import"node:events";import"node:process";import"cloudflare:workers";import"node:async_hooks";import"node:path";import"node:fs/promises";import"node:module";const r=o(o=>{const[r]=(o.context.params?.feature||"").split("/");throw t(r),e({statusCode:404,message:"Not found"})});export{r as default};
+//# sourceMappingURL=_...feature_.mjs.map

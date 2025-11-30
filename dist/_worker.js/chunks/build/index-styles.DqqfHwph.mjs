@@ -1,0 +1,2 @@
+const a=["@keyframes fadeIn-640e1a44{0%{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}.animate-fadeIn[data-v-640e1a44]{animation:fadeIn-640e1a44 1s ease-in-out}"];export{a as default};
+//# sourceMappingURL=index-styles.DqqfHwph.mjs.map

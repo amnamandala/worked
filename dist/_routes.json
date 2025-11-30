@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "include": [
+    "/*"
+  ],
+  "exclude": [
+    "/_fonts/*",
+    "/_nuxt/*",
+    "/dump.content.sql",
+    "/hub.config.json",
+    "/__nuxt_content/content/sql_dump.txt"
+  ]
+}

@@ -18,6 +18,78 @@ import { RuntimeConfig as UserRuntimeConfig, PublicRuntimeConfig as UserPublicRu
       serverKnownCssClasses: Array<any>,
    },
 
+   hub: {
+      projectUrl: string,
+
+      projectSecretKey: string,
+
+      url: string,
+
+      projectKey: string,
+
+      userToken: string,
+
+      remote: any,
+
+      remoteManifest: any,
+
+      dir: string,
+
+      workers: any,
+
+      ai: boolean,
+
+      analytics: boolean,
+
+      blob: boolean,
+
+      browser: boolean,
+
+      cache: boolean,
+
+      database: boolean,
+
+      kv: boolean,
+
+      vectorize: any,
+
+      databaseMigrationsDirs: Array<string>,
+
+      databaseQueriesPaths: Array<any>,
+
+      version: string,
+
+      env: string,
+
+      openapi: boolean,
+
+      bindings: {
+         observability: {
+            logs: boolean,
+         },
+
+         hyperdrive: any,
+
+         compatibilityFlags: any,
+      },
+
+      cloudflareAccess: {
+         clientId: any,
+
+         clientSecret: any,
+      },
+
+      cloudflare: {
+         accountId: any,
+
+         apiToken: any,
+
+         bucketId: any,
+
+         cacheNamespaceId: any,
+      },
+   },
+
    content: {
       databaseVersion: string,
 
@@ -39,6 +111,8 @@ import { RuntimeConfig as UserRuntimeConfig, PublicRuntimeConfig as UserPublicRu
    },
   }
   interface SharedPublicRuntimeConfig {
+   hub: any,
+
    mdc: {
       components: {
          prose: boolean,

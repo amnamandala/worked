@@ -45,6 +45,9 @@
       ],
       "vite/client": [
         "../node_modules/vite/client"
+      ],
+      "@nuxtjs/mdc": [
+        "../node_modules/@nuxtjs/mdc"
       ]
     },
     "esModuleInterop": true,
@@ -86,10 +89,11 @@
     "../node_modules/@nuxtjs/color-mode/node_modules",
     "../node_modules/@nuxt/ui/node_modules",
     "../node_modules/@nuxt/image/node_modules",
-    "../node_modules/@nuxtjs/mdc/node_modules",
     "../node_modules/@nuxt/content/node_modules",
+    "../node_modules/@nuxthub/core/node_modules",
     "../node_modules/@nuxt/devtools/node_modules",
     "../node_modules/@nuxt/telemetry/node_modules",
+    "../node_modules/@nuxtjs/mdc/node_modules",
     "../dist",
     "../.data",
     "../app/**/*",

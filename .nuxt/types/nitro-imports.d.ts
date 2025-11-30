@@ -70,6 +70,7 @@ declare global {
   const getValidatedRouterParams: typeof import('../../node_modules/h3').getValidatedRouterParams
   const handleCacheHeaders: typeof import('../../node_modules/h3').handleCacheHeaders
   const handleCors: typeof import('../../node_modules/h3').handleCors
+  const hubHooks: typeof import('../../node_modules/@nuxthub/core/dist/runtime/base/server/utils/hooks').hubHooks
   const isCorsOriginAllowed: typeof import('../../node_modules/h3').isCorsOriginAllowed
   const isError: typeof import('../../node_modules/h3').isError
   const isEvent: typeof import('../../node_modules/h3').isEvent
@@ -80,6 +81,7 @@ declare global {
   const isWebResponse: typeof import('../../node_modules/h3').isWebResponse
   const lazyEventHandler: typeof import('../../node_modules/h3').lazyEventHandler
   const nitroPlugin: typeof import('../../node_modules/nitropack/dist/runtime/internal/plugin').nitroPlugin
+  const onHubReady: typeof import('../../node_modules/@nuxthub/core/dist/runtime/base/server/utils/hooks').onHubReady
   const parseCookies: typeof import('../../node_modules/h3').parseCookies
   const parseMarkdown: typeof import('../../node_modules/@nuxtjs/mdc/dist/runtime/parser').parseMarkdown
   const promisifyNodeListener: typeof import('../../node_modules/h3').promisifyNodeListener
@@ -132,6 +134,12 @@ declare global {
   const useStorage: typeof import('../../node_modules/nitropack/dist/runtime/internal/storage').useStorage
   const writeEarlyHints: typeof import('../../node_modules/h3').writeEarlyHints
 }
+// for type re-export
+declare global {
+  // @ts-ignore
+  export type { HubHooks } from '../../node_modules/@nuxthub/core/dist/runtime/base/server/utils/hooks.d'
+  import('../../node_modules/@nuxthub/core/dist/runtime/base/server/utils/hooks.d')
+}
 export { useNitroApp } from 'nitropack/runtime/internal/app';
 export { useRuntimeConfig, useAppConfig } from 'nitropack/runtime/internal/config';
 export { defineNitroPlugin, nitroPlugin } from 'nitropack/runtime/internal/plugin';
@@ -150,3 +158,4 @@ export { useImage } from 'C:/Users/Eman/Documents/GitHub/worked/node_modules/@nu
 export { queryCollection, queryCollectionSearchSections, queryCollectionNavigation, queryCollectionItemSurroundings } from 'C:/Users/Eman/Documents/GitHub/worked/node_modules/@nuxt/content/dist/runtime/nitro';
 export { parseMarkdown } from 'C:/Users/Eman/Documents/GitHub/worked/node_modules/@nuxtjs/mdc/dist/runtime/parser';
 export { stringifyMarkdown } from 'C:/Users/Eman/Documents/GitHub/worked/node_modules/@nuxtjs/mdc/dist/runtime/stringify';
+export { hubHooks, onHubReady } from 'C:/Users/Eman/Documents/GitHub/worked/node_modules/@nuxthub/core/dist/runtime/base/server/utils/hooks';

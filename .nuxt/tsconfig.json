@@ -46,11 +46,14 @@
       "vite/client": [
         "../node_modules/vite/client"
       ],
+      "@nuxtjs/mdc": [
+        "../node_modules/@nuxtjs/mdc"
+      ],
       "#content/components": [
-        "./content/components.ts"
+        "./content/components"
       ],
       "#content/manifest": [
-        "./content/manifest.ts"
+        "./content/manifest"
       ],
       "~": [
         "../app"
@@ -100,15 +103,6 @@
       "#color-mode-options": [
         "./color-mode-options.mjs"
       ],
-      "#mdc-configs": [
-        "./mdc-configs.mjs"
-      ],
-      "#mdc-highlighter": [
-        "./mdc-highlighter.mjs"
-      ],
-      "#mdc-imports": [
-        "./mdc-imports.mjs"
-      ],
       "#vue-router": [
         "../node_modules/vue-router"
       ],
@@ -118,8 +112,17 @@
       "#imports": [
         "./imports"
       ],
+      "#mdc-configs": [
+        "./mdc-configs"
+      ],
+      "#mdc-highlighter": [
+        "./mdc-highlighter"
+      ],
+      "#mdc-imports": [
+        "./mdc-imports"
+      ],
       "#app-manifest": [
-        "./manifest/meta/dev"
+        "./manifest/meta/5d20cd71-62aa-4980-aea4-e32461dd9362"
       ],
       "#components": [
         "./components"
@@ -191,10 +194,11 @@
     "../node_modules/@nuxtjs/color-mode/node_modules",
     "../node_modules/@nuxt/ui/node_modules",
     "../node_modules/@nuxt/image/node_modules",
-    "../node_modules/@nuxtjs/mdc/node_modules",
     "../node_modules/@nuxt/content/node_modules",
+    "../node_modules/@nuxthub/core/node_modules",
     "../node_modules/@nuxt/devtools/node_modules",
     "../node_modules/@nuxt/telemetry/node_modules",
+    "../node_modules/@nuxtjs/mdc/node_modules",
     "../dist",
     "../.data",
     "../modules/*/runtime/server/**/*",
